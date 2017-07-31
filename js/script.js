@@ -17,16 +17,17 @@ Wyślij zmiany na nowe repozytorium na GitHubie. Pamiętaj o udostępnieniu go m
 
 */
 
+
 var a = prompt("Podaj szerokość podstawy trójkąta", 5);
-    h = prompt("Podaj wysokość trójkąta", 5);
-    triangleArea 	= a * h / 2;
+var h = prompt("Podaj wysokość trójkąta", 5);
+var triangleArea = a * h / 2;
+var triangleAreaText = "Pole trójkąta o podstawie a równej " + a + " i wysokości h równej " + h + " jest równe: " + triangleArea;
 
 
 
-document.getElementById("pole").innerHTML =
-	"Pole trójkąta o podstawie a równej " + a + " i wysokości h równej " + h + " jest równe: " + triangleArea;
+document.getElementById("pole").innerHTML = triangleAreaText;
 
-console.log('Pole trójkąta o podstawie a równej ' + a + ' i wysokości h równej ' + h + ' jest równe: ' + triangleArea);
+console.log(triangleAreaText);
 
 
 // nie ma tabów :)
